@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.3'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -13,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml'
 gem 'simple_form'
 gem 'devise'
+gem 'better_errors'
 
 group :development, :test do
   gem 'byebug'

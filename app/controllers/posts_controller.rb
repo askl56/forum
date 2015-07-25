@@ -19,6 +19,7 @@ class PostsController < ApplicationController
       redirect_to @post
     else
       render 'new'
+    end
   end
 
   def edit
@@ -29,6 +30,7 @@ class PostsController < ApplicationController
       redirect_to @post
     else
       render 'edit'
+    end
   end
 
   def destroy
