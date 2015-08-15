@@ -13,6 +13,7 @@ gem 'haml'
 gem 'simple_form'
 gem 'devise'
 gem 'better_errors'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'byebug'
