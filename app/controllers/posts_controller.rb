@@ -9,11 +9,11 @@ class PostsController < ApplicationController
   end
 
   def new
-    @posts = Post.new
+    @posts = current_user.posts.build
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
 
     if @post.save
       redirect_to @post
