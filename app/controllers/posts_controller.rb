@@ -15,22 +15,14 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
-    if @post.save
-      redirect_to @post
-    else
-      render 'new'
-    end
+    @post.save ? redirect_to @post : render 'new'
   end
 
   def edit
   end
 
   def update
-    if @post.update(post_params)
-      redirect_to @post
-    else
-      render 'edit'
-    end
+    @post.update(post_params) ? redirect_to @post : render 'edit'
   end
 
   def destroy
